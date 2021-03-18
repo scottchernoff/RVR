@@ -1,0 +1,25 @@
+body
+{
+
+    background-color: #ffffff;
+    background-size: cover;
+    font-family: Times;
+    margin: 5px;
+    font-size: medium;
+    color: #0b6311;
+}
+
+.login
+{
+
+}
+
+footer
+{
+    clear: left;
+    width: 99%;
+    height: auto;
+    margin-bottom: 8px;
+    text-align: center;
+   margin-top: 5px;
+}

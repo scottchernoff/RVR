@@ -6,17 +6,21 @@
     <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
-    <div class="login">
-        <form class "redirect" action="dashboard.html" method="post">
-          <p> Username </p>
-          <input type="text" name="" placeholder="Enter Username">
-          <p> Password </p>
-          <input type="password" name="" placeholder="Enter Password">
-          <input type="submit" name="" value="Login">
-        </form>
-      </div>
-     <footer>
-        <p>DEKRA &copy;2021</p>
-    </footer>
+    <form name="login">
+        Username<input type="text" name="userid"/>
+        Password<input type="password" name="pswrd"/>
+        <input type="button" onclick="check(this.form)" value="Login"/>
+        <input type="reset" value="Cancel"/>
+    </form>
+    <script language="javascript">
+        function check(form) { 
+            if(form.userid.value == "admin" && form.pswrd.value == "password") {
+                window.open('dashboard.html')
+            }
+            else {
+                alert("Error Password or Username")
+            }
+        }
+    </script>
 </body>
 </html>

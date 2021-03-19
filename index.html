@@ -6,20 +6,32 @@
     <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
+    <header>
+        <img src="Dekra.jpeg" alt="Logo" height="35" width="120">
+    </header>
+    
+    <div class="main">
+
+   
+    
+        <h2>RVR Login</h2>
     <form name="login">
-        Username<input type="text" name="userid"/>
-        Password<input type="password" name="pswrd"/>
-        <input type="button" onclick="check(this.form)" value="Login"/>
+        <input class= "userid" type="text" name="userid" placeholder="Username"/>
+        <input class= "pswrd" type="password" name="pswrd"placeholder="Password"/>
+        <input class= "button" type="button" onclick="check(this.form)" value="Login"/>
     </form>
+
     <script language="javascript">
         function check(form) { 
             if(form.userid.value == "admin" && form.pswrd.value == "password") {
                 window.open('dashboard.html')
             }
             else {
-                alert("Error Password or Username")
+                alert("Username or Password is incorrect")
             }
         }
     </script>
+
+</div>
 </body>
 </html>
